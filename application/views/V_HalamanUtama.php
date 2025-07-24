@@ -11,7 +11,7 @@
 	<div id="header">
 		<nav class="navbar navbar-expand-lg">
 			<div class="container">
-				<img src="logoGM.png" class="rounded-circle mb-4" style="height: 30px;" alt="">
+				<img src="<?php echo base_url('assets/img/logoGM.png'); ?>" style="height: 30px; margin-right: 20px;" alt="">
 				<a class="navbar-brand fw-bold" style="font-size: 20px;" href="#">GreenMarket</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 					<span class="navbar-toggler-icon"></span>
