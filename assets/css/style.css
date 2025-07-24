@@ -1,9 +1,10 @@
-body {
+#body {
     padding: 0px;
     margin: 0px;
+    background-color: #DBE0E6;
 }
 #header {
-    height: 50px;
+    height: 54px;
     width: 100%;
-    background-color: black;
+    background-color: white;
 }
