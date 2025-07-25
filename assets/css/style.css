@@ -25,17 +25,24 @@ nav ul li a:hover {
     background-color: #DBE0E6;
     padding-top: 9rem !important;
     padding-bottom: 3rem !important;
-    height: 700px;
+    height: 750px;
 }
 #halamanProduct {
     height: 700px;
-    background-color: white;
+    background-color: gray;
 }
 #halamanAboutUs {
     height: 700px;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.705);
 }
-
+#halamanBlog {
+    background-color: rgba(37, 4, 4, 0.418);
+    height: 700px;
+}
+#halamanFooter {
+    height: 300px;
+    background-color: #263238;
+}
 .portfolio__container {
   Display: grid;
   Grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Kolom responsif */
@@ -43,14 +50,12 @@ nav ul li a:hover {
   Justify-items: center;
   Padding: 0 1rem;
 }
-
 .portfolio__item {
   Display: flex;
   Flex-direction: column;
   Justify-content: center;
   Align-items: center;
 }
-
 .portfolio__img {
   Width: 250px;
   Position: relative;
@@ -60,19 +65,15 @@ nav ul li a:hover {
    Background-color 0.3s, color 0.3s;
   Box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 .portfolio__img img {
   Width: 100%;
   Display: block;
   Border-radius: .5rem;
   Transition: transform 0.3s ease;
 }
-
 .portfolio__img:hover img {
   Transform: scale(1.1);
 }
-
-
 .portfolio__link {
   Position: absolute;
   Bottom: -100%;
@@ -86,11 +87,9 @@ nav ul li a:hover {
   Border-radius: .5rem;
   Transition: bottom 0.3s ease;
 }
-
 .portfolio__img:hover .portfolio__link {
   Bottom: 0;
 }
-
 .portfolio__link-name {
   Color: #ffffff;
   Font-size: 1.2rem;
@@ -98,9 +97,69 @@ nav ul li a:hover {
   Font-weight: bold;
   Text-transform: uppercase;
 }
-
 .portfolio__desc {
   Text-align: center;
   Margin-top: 1rem;
   Font-size: 1rem;
+}
+nav.navbar {
+    height: 70px !important;
+    padding: 0.75rem 1rem !important;
+    transition: none !important;
+}
+section {
+  scroll-margin-top: 70px;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.social-icons .icon {
+  background-color: #3a444a;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+.social-icons .icon:hover {
+  background-color: #5c6b72;
+  transform: scale(1.1);
+}
+.company-section {
+  padding: 20px;
+  width: 200px;
+  font-family: sans-serif;
+}
+.company-section h5 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.company-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.company-section ul li {
+  margin-bottom: 10px;
+}
+.company-section ul li a {
+  color: #cfd4d8;
+  text-decoration: none;
+  font-size: 14px;
+}
+#icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
 }
