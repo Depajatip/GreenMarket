@@ -1,10 +1,106 @@
 #body {
     padding: 0px;
     margin: 0px;
-    background-color: #DBE0E6;
+    padding-top: 70px;
 }
 #header {
-    height: 54px;
     width: 100%;
+}
+nav ul li a {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+nav ul li a:hover {
+    border-bottom: 2px solid white;
+    color: orangered;
+}
+#halamanKeseluruhan {
+    height: 100%;
+}
+#halamanHome {
+    background-color: #DBE0E6;
+    padding-top: 9rem !important;
+    padding-bottom: 3rem !important;
+    height: 700px;
+}
+#halamanProduct {
+    height: 700px;
     background-color: white;
+}
+#halamanAboutUs {
+    height: 700px;
+    background-color: gray;
+}
+
+.portfolio__container {
+  Display: grid;
+  Grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Kolom responsif */
+  Gap: 2rem;
+  Justify-items: center;
+  Padding: 0 1rem;
+}
+
+.portfolio__item {
+  Display: flex;
+  Flex-direction: column;
+  Justify-content: center;
+  Align-items: center;
+}
+
+.portfolio__img {
+  Width: 250px;
+  Position: relative;
+  Overflow: hidden;
+  Border-radius: .5rem;
+  Transition: transform 0.3s ease;
+   Background-color 0.3s, color 0.3s;
+  Box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio__img img {
+  Width: 100%;
+  Display: block;
+  Border-radius: .5rem;
+  Transition: transform 0.3s ease;
+}
+
+.portfolio__img:hover img {
+  Transform: scale(1.1);
+}
+
+
+.portfolio__link {
+  Position: absolute;
+  Bottom: -100%;
+  Width: 100%;
+  Height: 100%;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+  Background-color: rgba(0, 0, 0, 0.5); /* Lebih gelap */
+  Color: #ffffff;
+  Border-radius: .5rem;
+  Transition: bottom 0.3s ease;
+}
+
+.portfolio__img:hover .portfolio__link {
+  Bottom: 0;
+}
+
+.portfolio__link-name {
+  Color: #ffffff;
+  Font-size: 1.2rem;
+  Text-decoration: none;
+  Font-weight: bold;
+  Text-transform: uppercase;
+}
+
+.portfolio__desc {
+  Text-align: center;
+  Margin-top: 1rem;
+  Font-size: 1rem;
 }
