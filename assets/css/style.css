@@ -14,6 +14,9 @@ nav ul li a {
     transition-duration: 300ms;
     border-bottom: 1px solid rgba(255, 68, 0, 0);
 }
+.navbar {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 nav ul li a:hover {
     border-bottom: 2px solid white;
     color: orangered;
@@ -22,22 +25,84 @@ nav ul li a:hover {
     height: 100%;
 }
 #halamanHome {
-    background-color: #DBE0E6;
-    padding-top: 9rem !important;
-    padding-bottom: 3rem !important;
-    height: 750px;
+    background: linear-gradient(to bottom, #ffffff 0%, #d6f5d6 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    padding-top: 0px;
+}
+#halamanHome h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#halamanHome p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+#halamanHome .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+#halamanHome img.hero-img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
 }
 #halamanProduct {
-    height: 700px;
-    background-color: gray;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #d6f5d6 0%, #ffff 100%);
 }
 #halamanAboutUs {
-    height: 700px;
-    background-color: rgba(128, 128, 128, 0.705);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 2rem;
+}
+#halamanAboutUs h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+#halamanAboutUs p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem 0;
+    max-width: 800px;
+    line-height: 1.8;
 }
 #halamanBlog {
-    background-color: rgba(37, 4, 4, 0.418);
-    height: 700px;
+  background: linear-gradient(to bottom, #ffffff 0%, #d6f5d6 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+  padding-top: 0px;
+}
+.product-img {
+  width: 460px;
+  max-width: 100%;
+  margin-top: 10px;
+}
+.brand-logo {
+  width: 200px;
+  margin-top: 30px;
+}
+#halamanBlog h2 {
+  font-size: 45px;
+  letter-spacing: 1px;
+}
+#halamanBlog p {
+  font-size: 19px;
+  line-height: 1.6;
 }
 #halamanFooter {
     height: 300px;
@@ -45,7 +110,7 @@ nav ul li a:hover {
 }
 .portfolio__container {
   Display: grid;
-  Grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Kolom responsif */
+  Grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   Gap: 2rem;
   Justify-items: center;
   Padding: 0 1rem;
@@ -62,7 +127,6 @@ nav ul li a:hover {
   Overflow: hidden;
   Border-radius: .5rem;
   Transition: transform 0.3s ease;
-   Background-color 0.3s, color 0.3s;
   Box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .portfolio__img img {
@@ -156,10 +220,54 @@ section {
   text-decoration: none;
   font-size: 14px;
 }
+.company-section {
+  padding: 20px;
+  width: 200px;
+  font-family: sans-serif;
+}
+.company-section h5 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+}.feedback {
+  padding: 20px;
+  width: 200px;
+  font-family: sans-serif;
+}
+.feedback h5 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.feedback input{
+  background-color: #515B60;
+  border-radius: 4px;
+}
+.feedback p {
+  color: #cfd4d8;
+  font-size: 15px;
+  font-family: sans-serif;
+  padding-top: 10px;
+}
 #icon-row {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
   padding: 20px;
+}
+.rate-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.icon-rate {
+  color: white;
+  transition: color 0.3s;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.icon-rate:hover {
+  color: orange;
+  width: 30px;
+  transform: scale(1.3);
 }
